@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//div[@name='buttons']" position="inside">
-                    <button class="oe_inline oe_stat_button" type="action" name="854" context="{'search_default_partner_id': active_id, 'default_partner_id': active_id, 'state': 'waiting'}" icon="fa-truck">
+                    <button class="oe_inline oe_stat_button" type="action" name="%(partner_deliveries)d" context="{'search_default_partner_id': active_id, 'default_partner_id': active_id, 'state': 'waiting'}" icon="fa-truck">
                         <field string="Ready transfers" name="open_deliveries_count" widget="statinfo"/>
                     </button>     
                         
